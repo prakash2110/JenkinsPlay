@@ -1,6 +1,5 @@
 @Library('pipeline-library-demo')_
 @Library('pipeline-library')
-import Hello1
 pipeline {
     agent any
 
