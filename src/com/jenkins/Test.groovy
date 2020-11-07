@@ -1,6 +1,7 @@
 package com.jenkins
 class Test{
 	String getName(){
-		return "Return String from Test Class"
+		OtherClass other = new OtherClass();
+		return other.stringMethod();
 	}
 }
