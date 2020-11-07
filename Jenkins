@@ -1,3 +1,4 @@
+@Library('pipeline-library-demo')_
 pipeline {
     agent any
 
@@ -5,6 +6,7 @@ pipeline {
         stage("Env Variables") {
             steps {
                 sh "printenv"
+		sayHello 'Dave'
             }
         }
     }
