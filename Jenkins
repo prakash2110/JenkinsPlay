@@ -7,8 +7,8 @@ pipeline {
         stage("Env Variables") {
             steps {
                 sh "printenv"
-		sayHello1 'Shree'
-		sayHello1 'Prakash'
+		hello1 'Shree'
+		hello1 'Prakash'
             }
         }
     }
