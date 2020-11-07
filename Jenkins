@@ -1,5 +1,5 @@
 @Library('jenkins-library@master') l1
-@Library('pipeline-library-demo@master') l2
+import com.jenkins.Test
 pipeline {
     agent any
 
@@ -7,8 +7,10 @@ pipeline {
         stage("Env Variables") {
             steps {
                 sh "printenv"
-		sayHello1 'Shree'
-		sayHello1 'Prakash'
+		sayHello 'Shree'
+		hello1 'Prakash'
+		Test test = new Test()
+		print test.getName()
             }
         }
     }
