@@ -9,7 +9,7 @@ pipeline {
             steps {
                 sh "printenv"
 		sayHello 'Dave'
-		sayHello1 'Prakash'
+		Hello1 'Prakash'
             }
         }
     }
