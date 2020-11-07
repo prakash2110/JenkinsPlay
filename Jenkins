@@ -1,6 +1,6 @@
 @Library('jenkins-library@master') l1
 @Library('pipeline-library-demo@master') l2
-import com.jenkins.*
+import com.jenkins.Test
 pipeline {
     agent any
 
