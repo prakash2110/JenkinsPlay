@@ -1,5 +1,4 @@
-@Library('pipeline-library-demo')_
-@Library('pipeline-library')
+@Library('jenkins-library@master') _
 pipeline {
     agent any
 
@@ -7,7 +6,6 @@ pipeline {
         stage("Env Variables") {
             steps {
                 sh "printenv"
-		sayHello 'Dave'
 		sayHello1 'Prakash'
             }
         }
