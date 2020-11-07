@@ -9,9 +9,9 @@ pipeline {
                 sh "printenv"
 		sayHello 'Shree'
 		hello1 'Prakash'
-		step{
-		Test test = new Test()
-		print test.getName()
+		script {
+			Test test = new Test()
+			print test.getName()
 		}
             }
         }
