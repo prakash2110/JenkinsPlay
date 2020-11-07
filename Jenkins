@@ -1,8 +1,11 @@
-@Library('pipeline-library-demo')_
-stage('Demo') {
-step{
-  echo 'Hello world'
-  sayHello 'Dave'
-  sh "printenv"
-}
+pipeline {
+    agent any
+
+    stages {
+        stage("Env Variables") {
+            steps {
+                sh "printenv"
+            }
+        }
+    }
 }
